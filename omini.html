@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+        }
+        
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        
+        .menu {
+            display: flex;
+        }
+        
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        @media(max-width:600px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+            }
+            .menu.show {
+                display: flex;
+            }
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+
+
+
+    <link rel="stylesheet" href="omini.css">
+    <script src="omini.js">
+    </script>
+
+</head>
+
+<body>
+
+    <!-- <nav class="omini-1">
+        <div class="omini-menu" id="menu">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Our service</a>
+            <a href="#">Home</a>
+        </div>
+
+
+        <div class="menu-toggle" onclick="toggleMenu()"></div>
+
+    </nav> -->
+
+    <!-- preloader -->
+    <div id="omini-loader">
+        <div class="omini-spinner"></div>
+        <p>Loading Ominifood.....</p>
+    </div>
+
+    <nav class="nav-omini">
+        <div class="navbar">
+            <a href="#" class="logo">Ominifood</a>
+            <div class="menu" id="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <a href="#"><button id="darkModeBn" onclick="toggleDarkMode()">Dark mode</button></a>
+            </div>
+            <span class="menu-icon" onclick="toggleMenu()">_ _ _ _</span>
+        </div>
+        <div class="omini-logo">
+            <div>
+                <img src="C:\Users\Admin\Desktop\my project\omnifood-logo.png" alt="" width="200px">
+            </div>
+            <div class="omini1-list">
+                <ul>
+                    <li>
+                        <a href="">How it works</a>
+                    </li>
+                    <li>
+                        <a href="">Meals</a>
+                    </li>
+                    <li>
+                        <a href="">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="omini1-button">
+                <button>Try for free</button><br>
+
+            </div>
+        </div>
+
+        <nav class="a">
+            <div class="hea">
+                <h1>A healthy meal delivered to your door, every single day</h1>
+                <p>The smart 365-days-per year food subscription that will amke you eat healthy again. Tailored to your personal tastes and nutritional needs</p>
+                <div class="al">
+                    <button class="lt">
+                        <a href="">Start eating well</a>
+                    </button>
+                    <button class="th">
+                        <a href="">Learn more</a>
+                    </button>
+                </div>
+
+                <div class="two">
+                    <img src="C:\Users\Admin\Desktop\my project\omini2.jpg" alt="" style="border: 2px solid white; border-radius: 100px; width: 50px;" class="profile">
+                    <img src="C:\Users\Admin\Desktop\my project\omini2.jpg" alt="" style="border: 2px solid white; border-radius: 100px; width: 50px;" class="profile">
+                    <img src="C:\Users\Admin\Desktop\my project\omini2.jpg" alt="" style="border: 2px solid white; border-radius: 100px; width: 50px;" class="profile">
+                    <img src="C:\Users\Admin\Desktop\my project\omini2.jpg" alt="" style="border: 2px solid white; border-radius: 100px; width: 50px;" class="profile">
+                    <img src="C:\Users\Admin\Desktop\my project\omini2.jpg " alt=" " style="border: 2px solid white; border-radius: 100px; width: 50px;" class="profile">
+                    <p><span>12k+</span> meals delivered last year
+                    </p>
+                </div>
+
+
+            </div>
+            <div>
+                <img src="C:\Users\Admin\Desktop\my project\omini1.png " style="padding-top: 80px; width: 500px; height: 500px;" alt=" ">
+            </div>
+
+
+        </nav>
+
+    </nav>
+    <nav class="AS ">
+        <div class="sa ">
+            <p>AS FEATURED IN</p>
+
+            <div class="src ">
+                <img src="C:\Users\Admin\Desktop\my project\omini5.png " alt=" " width="200px ">
+                <img src="C:\Users\Admin\Desktop\my project\omini4.png " alt=" " width="200px ">
+                <img src="C:\Users\Admin\Desktop\my project\omini3.png " alt=" " width="200px ">
+                <img src="C:\Users\Admin\Desktop\my project\omini6.png " alt=" " width="200px ">
+                <img src="C:\Users\Admin\Desktop\my project\omini7.png " alt=" " width="200px ">
+            </div>
+
+            <!--HOW IT WORKS start here  -->
+            <div>
+
+                <div class="how ">
+                    <h3 class="h3 ">HOW IT WORKS</h3>
+                    <P class="ruo ">Your daily dose of health in 3 simple steps</P>
+                </div>
+
+                <div class="tell ">
+                    <div class="br ">
+                        <h1>
+                            <div class="one"><span>01</span></div> <br>Tell us what you like ( and what you don't)
+                        </h1>
+                        <p> Never again waste time thinking about what to eat, Omnifood AI will create a 100% personalized weekly meal plan just for you. it makes sure you get all the nutrients and vitamins you need, no matter what diet you follow.</p>
+                    </div>
+
+                    <div class="circle-box">
+                        <div class="circle"></div>
+                        <img src="C:\Users\Admin\Desktop\my project\omini8.png " alt=" " width="300px ">
+                    </div>
+
+
+                </div>
+
+                <div class="tell ">
+
+
+                    <div class="circle-box">
+                        <div class="circle"></div>
+                        <img src="C:\Users\Admin\Desktop\my project\omini8.png " alt=" " width="300px ">
+                    </div>
+                    <div class="br ">
+                        <h1>
+                            <div class="one"><span>01</span></div> <br>Tell us what you like ( and what you don't)
+                        </h1>
+                        <p> Never again waste time thinking about what to eat, Omnifood AI will create a 100% personalized weekly meal plan just for you. it makes sure you get all the nutrients and vitamins you need, no matter what diet you follow.</p>
+                    </div>
+                </div>
+
+                <div class="tell ">
+                    <div class="br ">
+                        <h1>
+                            <div class="one"><span>01</span></div> <br>Tell us what you like ( and what you don't)
+                        </h1>
+                        <p> Never again waste time thinking about what to eat, Omnifood AI will create a 100% personalized weekly meal plan just for you. it makes sure you get all the nutrients and vitamins you need, no matter what diet you follow.</p>
+                    </div>
+
+                    <div class="circle-box">
+                        <div class="circle"></div>
+                        <img src="C:\Users\Admin\Desktop\my project\omini8.png " alt=" " width="300px ">
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="MEALS">
+                <h2>MEALS</h2>
+                <h1>Omnifood AI chooses from 5,000+ recipes</h1>
+            </div>
+
+            <div class="iter">
+                <div>
+                    <img src="C:\Users\Admin\Desktop\my project\omini11.jpg" alt="">
+                    <div class="vegi">
+                        <button>VEGITERIAN</button>
+                        <h3>Japanese Gyozas 650 calories NutrriScore ©74 4.9 rating (537)
+                        </h3>
+                    </div>
+
+
+
+                </div>
+
+                <div>
+                    <img src="C:\Users\Admin\Desktop\my project\omini12.jpg" alt=" ">
+                    <div class="vegi ">
+                        <div class="nott">
+                            <button>VEGET</button>
+                            <button class="pale">PALE</button>
+                        </div>
+
+                        <h3>Japanese Gyozas 650 calories NutrriScore ©74 4.9 rating (537)
+                        </h3>
+
+                    </div>
+                </div>
+
+
+                <div class="anyd">
+
+                    <h1>Works with any diet:</h1>
+                    <li>Vegetarian</li>
+                    <li> Vegan</li>
+                    <li>Pescatarian</li>
+                    <li>gluten-free</li>
+                    <li>Lactose-free</li>
+                    <li>Keto Paleo</li>
+                    <li>Low FODMAP</li>
+                    <li>Kid-friendly</li>
+                </div>
+
+            </div>
+            <div class="seea">
+                <a href="">see all recipes</a>
+            </div>
+    </nav>
+
+    <nav class="srcg">
+        <div>
+            <p class="ps">TESTIMONIALS</p>
+            <h1 class="hst">
+                Once you try it, you can't go back
+            </h1>
+        </div>
+        <div class="gcrs">
+            <div class="rcg">
+                <div class="rgc">
+
+                    <div class="imgp">
+                        <img src="C:\Users\Admin\Desktop\my project\omini27.jpg" alt="">
+                        <p> Inexpensive, healthy and great-tasting meals without even having to order manually! it feels truly magical _ Dave Bryson</p>
+                    </div>
+
+
+
+                    <div class="imgp">
+                        <img src="C:\Users\Admin\Desktop\my project\omini28.jpg" alt="">
+                        <p> Inexpensive, healthy and great-tasting meals without even having to order manually! it feels truly magical _ Dave Bryson</p>
+
+                    </div>
+                </div>
+
+
+
+                <div class="rcg">
+                    <div class="cgr">
+
+                        <div class="imgp">
+                            <img src="C:\Users\Admin\Desktop\my project\omini25.jpg" alt="">
+                            <p> Inexpensive, healthy and great-tasting meals without even having to order manually! it feels truly magical _ Dave Bryson</p>
+                        </div>
+
+
+
+
+                        <div class="imgp">
+                            <img src="C:\Users\Admin\Desktop\my project\omini27.jpg" alt="">
+                            <p> Inexpensive, healthy and great-tasting meals without even having to order manually! it feels truly magical _ Dave Bryson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ssalc">
+                <div>
+                    <img src="C:\Users\Admin\Desktop\my project\omini22.jpg" alt="" class="hover">
+                    <img src="C:\Users\Admin\Desktop\my project\omini21.jpg" alt="" class="hover">
+                    <img src="C:\Users\Admin\Desktop\my project\omini20.jpg" alt="" class="hover">
+                </div>
+
+                <div>
+                    <img src="C:\Users\Admin\Desktop\my project\omini19.jpg" alt="" class="hover">
+                    <img src="C:\Users\Admin\Desktop\my project\omini18.jpg" alt="" class="hover">
+                    <img src="C:\Users\Admin\Desktop\my project\omini17.jpg" alt="" class="hover">
+                </div>
+
+                <div>
+                    <img src="C:\Users\Admin\Desktop\my project\omini16.jpg" alt="" class="hover">
+                    <img src="C:\Users\Admin\Desktop\my project\omini15.jpg" alt="" class="hover">
+                    <img src="C:\Users\Admin\Desktop\my project\omini14.jpg" alt="" class="hover">
+                </div>
+
+                <div>
+                    <img src="C:\Users\Admin\Desktop\my project\omini13.jpg" alt="" class="hover">
+                    <img src="C:\Users\Admin\Desktop\my project\omini24.jpg" alt="" class="hover">
+                    <img src="C:\Users\Admin\Desktop\my project\omini23.jpg" alt="" class="hover">
+                </div>
+            </div>
+
+    </nav>
+
+
+
+    <nav class="PRICING">
+        <div class="pric">
+            <div class="ing">
+                <h5>PRICING</h5>
+                <h2>Eating well without breaking the bank</h2>
+            </div>
+        </div>
+
+        <div class="display">
+            <div class="cir">
+                <div class="color">
+                    <h4>STARTER</h4>
+                    <h1>$399</h1>
+                    <p class="per"> per month,That's just $13 per meal! </p>
+                    <p class="day">1 meal per day <br> Order from 11am to 9am Delivery is free</p>
+                    <button><a href="">Start eating well</a></button>
+                </div>
+            </div>
+
+
+            <div class="star">
+                <div class="art">
+                    <h4>STARTER</h4>
+                    <h1>$399</h1>
+                    <p class="per"> per month,That's just $13 per meal!</p>
+                    <p class="day"> 1 meal per day <br>Order from 11am to 9am Delivery is free</p>
+                    <button><a href="">Start eating well</a></button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="clash">
+            <h1>Prices all include application taxes,You can cancel at any time.Both plans including the following</h1>
+        </div>
+
+        <div class="peryear">
+            <div class="ids">
+
+                <div class="egg">
+                    <h4>Never cook again </h4>
+                </div>
+                <h5>Never cook again Our subscription covers 365 days per year, even including major hoildays</h5>
+            </div>
+
+
+            <div class="ids">
+
+                <div class="egg">
+                    <h4>Never cook again </h4>
+                </div>
+                <h5>Never cook again Our subscription covers 365 days per year, even including major hoildays</h5>
+            </div>
+
+
+            <div class="ids">
+
+                <div class="egg">
+                    <h4>Never cook again </h4>
+                </div>
+                <h5>Never cook again Our subscription covers 365 days per year, even including major hoildays</h5>
+            </div>
+
+
+
+            <div class="ids">
+
+                <div class="egg">
+                    <h4>Never cook again </h4>
+                </div>
+                <h5>Never cook again Our subscription covers 365 days per year, even including major hoildays</h5>
+            </div>
+        </div>
+
+
+        <nav class="noit">
+
+            <form action="">
+                <h1>Get Your first meal for free!</h1>
+                <p>Healthy, tasty and hassle free meals are waiting for you. Start eating well today. You can cancle or pause anytime.And the first meal is on us.</p>
+                <div class="name1">
+                    <p class="irst">surname</p>
+                    <input type="text" placeholder="john smith">
+                </div>
+                <div class="name1">
+                    <p class="rst">other name</p>
+                    <input type="text" placeholder="john smith">
+                </div>
+
+                <div>
+                    <p class="rst">you will hear from us</p>
+                    <select name="social-media" id="" class="tpo">
+                        <option value="">choose an option</option>
+                        <option value="facebook">facebook</option>
+                        <option value="instagram">instagram</option>
+                        <option value="twiter">twiter</option>
+                    </select>
+
+                </div>
+                <div class="won">
+                    <button>Sign up now</button>
+                </div>
+            </form>
+
+            <div class="mgi">
+                <img src="C:\Users\Admin\Desktop\my project\omini30.jpg" style="width: 500px; height: 600px;" alt="">
+            </div>
+
+        </nav>
+        <hr>
+        <div class="ypo">
+
+            <div>
+                <img src="C:\Users\Admin\Desktop\my project\omnifood-logo.png" style="width: 80px; height: 30px;" alt="">
+                <h4 class="opy">Copyright © 2023 by Omnifood, <br> inc. All right reserved</h4>
+            </div>
+
+            <div>
+                <h3>contact</h3>
+                <h4>623 Harrison, 2nd Floor <br>San Francisco,CA 94107
+                    <h4>+234-705-732-3213</h4>
+                    <h4>abisolaa232@gmail.com</h4>
+                </h4>
+            </div>
+
+            <div>
+                <h3>account</h3>
+                <h4>
+                    <a href="">create account</a>
+                </h4>
+                <h4>
+                    <a href="">Sign in</a>
+                </h4>
+                <h4>
+                    <a href="">ios app</a>
+                </h4>
+                <h4>
+                    <a href="">Android app</a>
+                </h4>
+            </div>
+
+            <div>
+                <h3>company</h3>
+                <h4>
+                    <a href="">About omimifood</a>
+                </h4>
+                <h4>
+                    <a href="">For business</a>
+                </h4>
+                <h4>
+                    <a href="">For cooking partner</a>
+                </h4>
+                <h4>
+                    <a href="">Careers</a>
+                </h4>
+            </div>
+            <div>
+                <h3>Resources</h3>
+                <h4>
+                    <a href="">recipe directory</a>
+                </h4>
+                <h4>
+                    <a href="">Help center</a>
+                </h4>
+                <h4>
+                    <a href="">Privacy and terms</a>
+                </h4>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="counter-cointainer">
+            <h2>simple counter</h2>
+            <div class="counter-display" id="counter">0</div>
+            <button class="decrease" onclick="decrease()">decrease</button>
+            <button class="reset" onclick="reset()">reset</button>
+            <button class="increase" onclick="increase()">increase</button>
+        </div>
+
+    </nav>
+</body>
+
+</html>
